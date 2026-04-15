@@ -1,5 +1,5 @@
-#NoteBook Project by Maksym Golovach
-##This project is the first project made by me in Qt c++.
+# NoteBook Project by Maksym Golovach
+## This project is the first project made by me in Qt c++.
 
 Function present in current version:
 + Save file
