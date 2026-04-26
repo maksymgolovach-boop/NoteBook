@@ -6,4 +6,8 @@ Function present in current version:
 + Open file
 + Create new file
 + Modifying contents of existing file
++ Zoom in/out text
++ Undo/Redo
++ Find first appearance of word/sentence
 + Shortcuts for all of the functions listed previously
++ Recent files
