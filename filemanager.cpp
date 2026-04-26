@@ -7,7 +7,7 @@
 FileManager::FileManager() {
     m_currentFilePath = "";
     // Define supported formats for the "Save As" logic
-    m_supportedFormats << "txt" << "cpp" << "h" << "html" << "md";
+    m_supportedFormats << "txt" << "cpp" << "h" << "html" << "md" << "c";
 }
 
 FileManager::~FileManager() {
@@ -47,14 +47,11 @@ void FileManager::saveFileAs(const QString& filePath, const QString& format) {
     }
 
     m_currentFilePath = filePath;
-    // Note: The content writing logic would typically be called from saveFile()
 }
 
 // 4. Save
 void FileManager::saveFile(const QString& currentContent) {
     if (m_currentFilePath.isEmpty()) {
-        // Logic: In the UI layer, you'd trigger a QFileDialog here
-        // to get the path/format and then call saveFileAs.
         throw std::runtime_error("No file opened. Use 'Save As' instead.");
     }
 
